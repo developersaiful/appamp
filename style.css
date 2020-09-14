@@ -1,0 +1,398 @@
+/* Font CSS */
+body,h1,h2,h3,h4,h5,h6,p,span,a{
+    font-family: 'Work Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+/* Header CSS */
+.header{
+    background: #fff;
+    padding: 5px 0;
+    z-index: 99;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.header img{
+    width: 40px;
+}
+.header a{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #010101;
+    margin-top: 5px;
+}
+.header a:hover{
+    color: #434343;
+    font-weight: 400;
+}
+.header ul li{
+    display: inline-block;
+    position: relative;
+}
+.header ul li a{
+    display: block;
+    padding: 5px 15px;
+    color: #434343;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+}
+.header ul li a:hover{
+    color: #6278df;
+}
+.btn{
+    box-shadow: 3px 3px 30px 0 rgba(0,0,0,.2);
+    padding: 3px 15px;
+    color: #6278df;
+}
+.btn a{
+    font-weight: 300;
+    font-size: 12px;
+}
+
+/* Sub Menu CSS */
+.header ul li ul{
+    position: absolute;
+    left: -50px;
+    top: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: .5s;
+}
+.header ul li ul li{
+    width: 220px;
+    background: #fff;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd!important;
+    border: 1px solid #fff;
+    margin: 1px 0;
+}
+.header ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+/* Banner Section CSS */
+.banner{
+    background: url(./img/banner.jpg);
+    padding: 150px 0;
+    margin-top: 80px;
+}
+.banner h4{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+}
+.banner h1{
+    color: #fff;
+    padding: 20px 0;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.banner .btn{
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #7d7d7d;
+    margin: 0 8px;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+}
+.banner .btn:hover{
+    color: #fff;
+    background: #6278df;
+}
+
+/* Veideo Section CSS */
+.video-section{
+    background: #f7f9ff;
+    padding: 60px 0;
+    margin: 50px 0;
+}
+.video-section h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+.video-section P{
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 10px;
+    line-height: 1.6em;
+}
+
+/* Service Section CSS */
+
+.service-section{
+    background: #f9fafd;
+    padding: 60px 0;
+    margin: 50px 0;
+}
+.service-title h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+.service-title h6{
+    font-size: 25px;
+    font-weight: 300;
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+.card{
+    /* box-shadow: 3px 3px 30px 0 rgba(0,0,0,.2); */
+    margin-bottom: 20px;
+    padding: 20px 0;
+    border: none;
+    transition: .5s;
+    height: 200px;
+    box-shadow: 0 0 1px 0 rgba(0,0,0,.2);  
+}
+.card span{
+    font-size: 50px;
+    color: #6278df;
+    margin-left: 15px;
+}
+.card h1{
+    font-size: 25px;
+    font-weight: 400;
+}
+.card p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.card:hover{
+    box-shadow: 3px 3px 40px 0 rgba(0,0,0,.1);
+}
+
+/* Priceing Table CSS */
+
+.pricing-table{
+    background: #f7f9ff;
+    padding: 50px 0;
+}
+.priceing-title h1{
+    font-size: 50px;
+    font-weight: 400;
+}
+.priceing-title p{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 40px 50px;
+}
+.pricing-tables {
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+}
+.p-title{
+    border-bottom: 1px solid #ddd;
+    padding: 50px;
+    transition: .5s;
+}
+.p-title h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.p-title h1 {
+    font-size: 58px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+.p-title h1 span {
+    font-size: 30px;
+    font-weight: 500;
+}
+.p-title h3 {
+    font-size: 23px;
+    font-weight: 500;
+}
+.p-title p {
+    font-size: 20px;
+    font-weight: 400;
+}
+/* Pricing Content */
+
+.p-content{
+    padding: 10px 50px;
+    margin-left: -35px;
+}
+.p-content ul{
+    list-style: none;
+}
+.p-content ul li{
+    padding: 10px 0;
+    font-size: 20px;
+    font-size: 400;
+    margin-left: 0;
+    color: #838383;
+}
+
+.p-content ul li span{
+    font-size: 30px;
+    margin-right: 20px;
+    color: #6278df;
+    line-height: 20px;
+}
+.p-btn .btn{
+    padding: 15px 70px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #7d7d7d;
+    margin: 0 8px;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+}
+.pricing-tables:hover .p-title{
+    background: #6278df;
+    color: #fff;
+    transition: .5s;
+}
+.pricing-tables:hover .p-btn .btn{
+    background: #6278df;
+    color: #fff;
+}
+.pricing-tables:hover{
+    box-shadow: 3px 3px 40px 0 rgba(0,0,0,.1);
+}
+
+/* Team Section CSS */
+
+.team-section{
+    background: #fff;
+    padding: 30px 0;
+    margin: 20px 0;
+    
+}
+.team-members{
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+    padding: 0 0 10px 0;
+    background: #fff;
+}
+.team-section .priceing-title h1{
+    font-size: 40px;
+    font-weight: 500;
+    padding: 50px 0;
+}
+.team-member img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.team-profile{
+    padding: 10px 15px;
+}
+.team-profile h1{
+    font-size: 30px;
+    font-weight: 400;
+}
+.team-profile h4{
+    font-size: 18px;
+    font-weight: 300;
+}
+.team-members:hover{
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
+}
+
+/* News letter Section CSS */
+.default-input{
+    width: 300px;
+    padding: 10px 0;
+    border: 1px solid transparent;
+    box-shadow: 2px 0 10px 0 rgba(0,0,0,.1);
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 1.3em;
+    color: #7d7d7d;
+}
+.default-input:focus{
+    box-shadow: 3px 3px 10px 0 rgba(0,0,0,.3);
+    border: 1px solid #6278df;
+    color: #7d7d7d;
+    
+
+}
+.newsletter{
+    background: #f7f9ff;
+    padding: 100px 0;
+    ;
+}
+.newsletter .btn{
+    padding: 10px 30px;
+    color: #fff;
+    background: #6278df;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.newsletter .btn:hover{
+    color: #6278df;
+    background: #fff;
+}
+.newsletter h1{
+    padding-bottom: 25px;
+}
+
+/* Blog Section CSS */
+
+.blog-section{
+    background: #f7f7fc;
+    padding: 80px 0;
+    margin: 50px 0;
+}
+.blog-title{
+    height: 150px;
+}
+.blog-title h1{
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.blog-title p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.8em;
+}
+.blog-content card{
+    border: 1px solid #fff;
+    background: #fff;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,.2);
+}
+.blog-content img {
+    height: 190px;
+    width: auto;
+    margin-top: -16px;
+}
+.blog-content h1{
+    font-size: 25px;
+    font-weight: 400;
+}
+.blog-content p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.7em;
+    margin-top: 15px;
+}
+
+/* Feedback Section */
+
+.feedback-section{}
+.feedback-section .card{
+    padding: 20px;
+    width: 330px;
+    height: 250px;
+}
+.feedback-section .card p{
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 15px 0 0 10px;
+    line-height: 1.7em;
+}
